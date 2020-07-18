@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: ranjithvatakkeelpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ranjithvatakkeelpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: ranjithvatakkeelpipelinesjavascriptdocker 
+          image: aksrvtestacr.azurecr.io/ranjithvatakkeelpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
